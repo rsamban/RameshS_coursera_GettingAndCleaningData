@@ -27,7 +27,7 @@ This code depends that mesurements from Samsung Smart phone be present in the wo
 run_analysis.R file must be sourced to call single function runAnalysis().
 
 1. source(run_analysis.R)
-2a. runAnalysis() - save the result "Answers.txt" file in current working directory.
+2. runAnalysis() - save the result "Answers.txt" file in current working directory.
 
 **OR**
 
