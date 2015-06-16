@@ -1,28 +1,27 @@
+library(data.table)
+library(dplyr)
 runAnalysis <- function() {
-    # load features names
-    ft <- read.csv("features.txt", sep="", header=FALSE)
-    # rename the columns
+    # 1. load features names and rename the columns
+    ft <- read.csv("./UCI HAR Dataset/features.txt", sep="", header=FALSE)
     names(ft) <- c("seqNo", "featureName")
     
-    # load activity labels
-    al <- read.csv("activity_labels.txt", sep="", header=FALSE)
-    # rename columns
+    # load activity labels and rename columns
+    al <- read.csv("./UCI HAR Dataset/activity_labels.txt", sep="", header=FALSE)
     names(al) <- c("activityTypeCode", "activityType")
     
     # Load measured feature values for "test" subjects 
-    x_tst <- read.csv("./test/X_test.txt", sep="", header=FALSE)
-    y_tst <- read.csv("./test/y_test.txt", sep="", header=FALSE)
-    s_tst <- read.csv("./test/subject_test.txt", sep="", header=FALSE)
+    x_tst <- read.csv("./UCI HAR Dataset/test/X_test.txt", sep="", header=FALSE)
+    y_tst <- read.csv("./UCI HAR Dataset/test/y_test.txt", sep="", header=FALSE)
+    s_tst <- read.csv("./UCI HAR Dataset/test/subject_test.txt", sep="", header=FALSE)
     
     # Load measured features values for "train" subjects
-    x_trn <- read.csv("./train/X_train.txt", sep="", header=FALSE)
-    y_trn <- read.csv("./train/y_train.txt", sep="", header=FALSE)
-    s_trn <- read.csv("./train/subject_train.txt", sep="", header=FALSE)
+    x_trn <- read.csv("./UCI HAR Dataset/train/X_train.txt", sep="", header=FALSE)
+    y_trn <- read.csv("./UCI HAR Dataset/train/y_train.txt", sep="", header=FALSE)
+    s_trn <- read.csv("./UCI HAR Dataset/train/subject_train.txt", sep="", header=FALSE)
     
     # Add subject, subjectType and activity type to measured features (for both test and train measurements)
     tst <- cbind(s_tst,subjectType="Test",y_tst,x_tst)
     trn <- cbind(s_trn,subjectType="Train",y_trn,x_trn)
-    
     
     #combine test and training data
     combinedDataSet <- rbind(tst, trn)
@@ -34,7 +33,6 @@ runAnalysis <- function() {
     # get the column names and indices of "mean" and "standar deviation" measurement
     meanAndStdDeviationIndices <- c(1, 2, 3, grep("mean", combinedDataSetColumnNames), grep("std", combinedDataSetColumnNames) )
     meanAndStdDeviationNames <- combinedDataSetColumnNames[meanAndStdDeviationIndices]
-
     
     # get the filtered data set (filter by column) that has 
     # only mean and standard deviations of feature measurements
@@ -51,5 +49,4 @@ runAnalysis <- function() {
     avgMeanAndStd <- groupByClause %>% summarise_each(funs(mean))
     write.table(avgMeanAndStd, file="Answer.txt", row.names=FALSE)
     avgMeanAndStd
-    
 }
