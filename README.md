@@ -30,7 +30,7 @@ run_analysis.R file must be sourced to call single function runAnalysis() to pro
 2. runAnalysis() - save the result "Answers.txt" file in current working directory.
 3. result <- runAnalysis();View(result) - save the result "Answers.txt" file in current working directory and view the result in R Data Viewer
 
-## Source code run_analysis.R
+## Source code [run_analysis.R](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/run_analysis.R)
 
 ```
 library(data.table)
