@@ -2,7 +2,7 @@
 ## Data Source
 Please refer to [README.md](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/README.md)
 ## Tidy Data And explanation
-### Output file name
+### Output file
 Please refer to [Answers.txt](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/Answer.txt)
 ### Calcuated Feature set values
 The feature set is average of values for each subject and for each activity. Following are the column names and their explanation.
@@ -17,7 +17,7 @@ The feature set is average of values for each subject and for each activity. Fol
      * If the column name begins with "f", it is frequency domain value.
      * If the column name contains "Acc", the value is calculated from Accelerometer signal
      * If the column name contains "Gyro", the value is calculated from Gyroscope signal
-	* The last portion of the column name(X/Y/Z) specifies if the measurement is along X, Y or X axis.
+	 * The last portion of the column name(X/Y/Z) specifies if the measurement is along X, Y or X axis.
 5. e.g: The column name "tBodyAcc-mean()-Z" 
      * t - this is time domain measurement
      * Acc - signal value from Accelerometer is used.
