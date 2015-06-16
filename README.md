@@ -24,7 +24,7 @@ This code depends that mesurements from Samsung Smart phone be present in the wo
   * UCI HAR Dataset/train/y_train.txt
 
 ## How to use the code
-run_analysis.R file must be sourced to call single function runAnalysis() to produce the result.
+run_analysis.R file must be sourced to call single function runAnalysis().
 
 1. source(run_analysis.R)
 2. runAnalysis() - save the result "Answers.txt" file in current working directory.
