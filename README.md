@@ -11,8 +11,8 @@ The 561 data points for each subject and for each activity are analysed and foll
 	The details of the calculated values in each column are described in [Code Book](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/CookBook.md)
 # Code
 ## run_analyis.R
-The code in this file(https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/run_analysis.R) produces mean and standard deviation for each measured feature for each subject and for each activity.
-This code depends that Samsung data is the working directory in the following hierarchy. For detailed explantion of how the source code works, pleas refer inline comments in run_analysis.R(https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/run_analysis.R)
+The code in this [file](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/run_analysis.R) produces mean and standard deviation for each measured feature for each subject and for each activity.
+This code depends that Samsung data is the working directory in the following hierarchy. For detailed explantion of how the source code works, pleas refer inline comments in [run_analysis.R](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/run_analysis.R)
 
   * UCI HAR Dataset/features.txt
   * UCI HAR Dataset/activity_labels.txt
