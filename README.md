@@ -22,6 +22,7 @@ This code depends that Samsung data is the working directory in the following hi
   * UCI HAR Dataset/train/X_train.txt
   * UCI HAR Dataset/train/subject_train.txt
   * UCI HAR Dataset/train/y_train.txt
+
 ## How to use the code
 run_analysis.R file must be sourced to call single function runAnalysis() to produce the result.
 
