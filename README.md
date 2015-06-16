@@ -28,4 +28,5 @@ run_analysis.R file must be sourced to call single function runAnalysis().
 
 1. source(run_analysis.R)
 2. runAnalysis() - save the result "Answers.txt" file in current working directory.
+**OR**
 3. result <- runAnalysis();View(result) - save the result "Answers.txt" file in current working directory and view the result in R Data Viewer
