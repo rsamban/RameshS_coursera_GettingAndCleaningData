@@ -1,9 +1,9 @@
 # CodeBook for tidy data set
 ## Data Source
 	Please refer to [README.md](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/README.md)
-## Tidy Data And explanation
+## Tidy Data And [explanation](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/Answer.txt)
 ### Output file name
-	[Answers.txt](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/Answer.txt)
+	Please refer to [Answers.txt](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/Answer.txt)
 ### Calcuated Feature set values
 	The feature set is average of values for each subject and for each activity. Following are the column names and their explanation
 	1. subjectType - Specifies whether the subject is test or training subject
