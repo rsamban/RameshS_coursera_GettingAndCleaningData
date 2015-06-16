@@ -14,10 +14,10 @@ The feature set is average of values for each subject and for each activity. Fol
      * If the column name contains "mean()", values specified is average mean value.
      * If the column name contains "std()", values specified is average standard deviation value.
      * If the column name begins with "t", it is time domain value.
-     * If the column name begins with "f", it is time domain value.
+     * If the column name begins with "f", it is frequency domain value.
      * If the column name contains "Acc", the value is calculated from Accelerometer signal
      * If the column name contains "Gyro", the value is calculated from Gyroscope signal
-	* The last portion of the column name specifies if the measurement is along X, Y or X axis.
+	* The last portion of the column name(X/Y/Z) specifies if the measurement is along X, Y or X axis.
 5. e.g: The column name "tBodyAcc-mean()-Z" 
      * t - this is time domain measurement
      * Acc - signal value from Accelerometer is used.
