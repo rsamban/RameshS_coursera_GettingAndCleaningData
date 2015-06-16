@@ -8,7 +8,7 @@ The input data for this analysis consist of 561 feature points for each subject 
 The 78 (only mean and standard deviation from 561 input feature set) feature values for each subject and for each activity are analysed and following output is produced in [Answers.txt](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/Answer.txt) file.
 
 ## Code Book to understand the result
-	The details of the calculated values in each column are described in [Code Book](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/CookBook.md)
+The details of the calculated values in each column are described in [Code Book](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/CookBook.md)
 # Code
 ## run_analyis.R
 The code in this [file](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/run_analysis.R) produces mean and standard deviation for each measured feature for each subject and for each activity.
