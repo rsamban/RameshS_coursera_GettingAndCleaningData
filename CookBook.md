@@ -5,7 +5,8 @@ Please refer to [README.md](https://github.com/rsamban/RameshS_coursera_GettingA
 ### Output file name
 Please refer to [Answers.txt](https://github.com/rsamban/RameshS_coursera_GettingAndCleaningData/blob/master/Answer.txt)
 ### Calcuated Feature set values
-The feature set is average of values for each subject and for each activity. Following are the column names and their explanation
+The feature set is average of values for each subject and for each activity. Following are the column names and their explanation.
+
 1. subjectType - Specifies whether the subject is test or training subject
 2. subject - subject number
 3. activityType - activity type that subject performed.
