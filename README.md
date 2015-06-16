@@ -1,4 +1,4 @@
-run_analyis.R
+# run_analyis.R
 This files contains R script that loads the data for activity measurements for 30 volunteers and writes(into file Answer.txt) the average of each of the variables mentioned in the code book for each activity and for each subject.
 
 This code expects that Samsung data is the working directory in the following hierarchy
